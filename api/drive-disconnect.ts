@@ -1,1 +1,0 @@
-export default function handler(req:any,res:any){if(req.method!=='POST')return res.status(405).json({error:'POST only'});res.setHeader('Set-Cookie','gf_drive_refresh=; Path=/api/drive; HttpOnly; Secure; SameSite=Lax; Max-Age=0');res.json({ok:true})}
